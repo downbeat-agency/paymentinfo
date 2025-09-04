@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downbeat Personnel Info — Noteforms</title>
+  <meta name="description" content="Downbeat Personnel Info form embedded via Noteforms with fallback height.">
+  <style>
+    html, body { margin: 0; padding: 0; background: #fff; }
+    .container { max-width: 1400px; margin: 0 auto; }
+    /* Fallback: give the iframe enough height to display the form even if JS doesn't resize it */
+    #downbeat-personnel-info-hybdlj {
+      border: 0;
+      width: 100%;
+      min-height: 3200px;   /* Adjust as needed for your form length */
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe
+      id="downbeat-personnel-info-hybdlj"
+      title="Downbeat Personnel Info"
+      src="https://noteforms.com/forms/downbeat-personnel-info-hybdlj"
+      loading="eager"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Noteforms auto-resize script -->
+  <script src="https://noteforms.com/widgets/iframe.min.js" async></script>
+  <script>
+    window.addEventListener("load", function() {
+      if (typeof initEmbed === "function") {
+        initEmbed("downbeat-personnel-info-hybdlj");
+      }
+    });
+  </script>
+
+  <noscript>Please enable JavaScript to load the form.</noscript>
+</body>
+</html>
